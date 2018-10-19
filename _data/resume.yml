@@ -1,0 +1,219 @@
+# 数据格式可以为 yaml(文件以.yml结尾) 或者json(文件以.json结尾)
+# 如果YAML格式的数据请先检查格式是否有误，可选检查工具 http://www.yamllint.com
+
+title: "苏成闯的简历"
+lang: "zh" #语言设置 zh表示中文 en 表示英语
+name: "苏成闯"
+jobtitle: "Web 前端开发" #可空不显示
+photo: "assets/img/20180518161228.gif" #照片可空，不显示
+
+#联系方式
+contact: #联系方式连接等3~5行
+- text: "su649497370@gmail.com" #文本内容
+  href: 'mailto:su649497370@gmail.com' #链接，无链接则空
+  icon: 'icons/email.svg' #图标 svg文件
+- text: "15636963963"
+  href: 'tel:15636963963'
+  icon: 'icons/phone.svg'
+- text: "scc649497370"
+  href: javascript:wechatLayer('assets/img/wechatQR.jpg');
+  icon: 'icons/wechat.svg'
+- text: "Suscc"
+  href: 'https://github.com/Suscc'
+  icon: "icons/github.svg"
+  attr: 'target="_blank"' #新标签页打开
+  # - text: "地址"
+  #   icon: "icons/location.svg"
+
+#main下面是主体内容，类别条数不限
+main: #简历主要内容，
+- type: skills
+  name: "技能"
+  content:
+  - title: 编程语言
+    items: #itmems 可以小块的方式显示
+    - HTML
+    - CSS
+    - Javascript(ES6)
+  - title: 技术栈
+    items: #itmems 可以小块的方式显示
+    - Angular(4.x)
+    - AngularJS(1.x)
+    - Typescript
+    - Jquery
+    - Zepto
+    - Less
+    - Sass
+    - Fis(百度出品的构建工具)
+    - Git
+    - Svn
+    - Npm
+  - title: 未应用过的技术栈(基于兴趣自行学习 没有实际项目经验)
+    items: #itmems 可以小块的方式显示
+    - Vue
+    - Node
+    - Express
+    - MongoDB
+    - 小程序(wx)
+  - title: 编辑器
+    items: #itmems 可以小块的方式显示
+    - Vs Code
+    - Atom
+    - Chrome DevTool WorkSpace
+
+- type: experience
+  name: 公司
+  content:
+  - title: 北京拓扑高科信息技术有限公司
+    sub: 前端开发
+    url: http://www.topu.net
+    duration: "2016年7月 - 2018年7月"
+    tags:
+    - FE
+    - 前端
+    - 小型团队
+    - 敏捷开发
+    # summary:
+    # detail: 同时包含 summary和detail在Chrome，Safari(包括IOS)，Android和新版Firefox等会自动折叠，不支持折叠的浏览器和展开后表现一致
+    # open: open
+    #可以设置open默认展开
+
+- type: projects
+  name: 项目
+  content:
+  - title: Topu 后台系统 3.0
+    duration: 主要开发者(共 2 位开发者)
+    tags:
+    - 轮子
+    - 作死
+    - 这货能用？
+    summary: 利用 Angular4 重构一套后台框架，组建了较为完整的组件、样式库，并独立完成 API 文档的编写，最后用其开发上线了一个名片小程序的配套后台。<br><br>项目亮点：<br>貌似没有什么亮点.. 抱歉，说一点遗憾吧(还能凑凑字数)。当时用 ES6 新特征 Decorator 写了个组件生成器可以实现快速构建表单和列表，想着能和 Angular 内置的一些 API(如 Component)那样的同步开发体验，结果到项目将上线阶段发现没有办法用……  AOT 打包没有办法识别你自己定义的装饰器，到摇树优化阶段总是被干掉，解决成本还挺高，综合考虑最后还是放弃掉了。
+    detail:
+    - 'assets/img/mp-1.gif'
+    - 'assets/img/mp-2.gif'
+    - 'assets/img/mp-3.gif'
+    - 'assets/img/mp-4.gif'
+      # md: _data/mp-angular.md
+    sub: Angular 4.4.7、Typescript
+  - title: Topu 后台系统 2.0
+    tags:
+    - 轮子
+    - 从零开始
+    duration: 主要开发者
+    sub: AngularJS 1.1.5、RequireJS、Less、r.js(require的打包工具)
+    summary: 利用 AngularJS 1.1.5 参照原型从零搭建一款后台框架<br><br>项目亮点：<br>因不满低版本 Angular 的模块化机制，故用 AMD 规范与之配合，实现了当时较为主流的模块化解决方案
+    detail:
+    - 'assets/img/mp-angularjs-0.png'
+    - 'assets/img/mp-angularjs-1.png'
+    - 'assets/img/mp-angularjs-2.png'
+    - 'assets/img/mp-angularjs-3.png'
+    - 'assets/img/mp-angularjs-4.png'
+    - 'assets/img/mp-angularjs-5.png'
+    - 'assets/img/mp-angularjs-6.png'
+    - 'assets/img/mp-angularjs-7.png'
+      # md: _data/mp-angularjs.md
+  - title: 博思通讯
+    duration: 参与开发者(部分页面)
+    url: http://www.guojiyujia.com
+    summary: 依照设计稿精准构建布局及还原交互、动画等
+    detail:
+    - 'assets/img/yuga.jpg'
+  #     # md: _data/yuga.md
+    sub: Less、jQuery、RequireJS、Fis3
+
+- type: projects2
+  name: '&nbsp'
+  content:
+  - title: 淘换堂
+    duration: 参与开发者(部分页面)
+    url: http://www.guojiyujia.com
+    summary: 微信公众号电商平台，依照设计稿精准构建布局及还原交互、动画等
+    detail:
+    - 'assets/img/tht-0.jpg'
+    - 'assets/img/tht-1.jpg'
+    - 'assets/img/tht-2.jpg'
+    - 'assets/img/tht-3.jpg'
+    sub: Less、Zepto、WeUI、Fis3、dropDownLoad(我的滑动加载插件)
+  - title: 北京天悦国际瑜伽
+    duration: 参与开发者(部分页面)
+    url: http://www.guojiyujia.com
+    summary: 依照设计稿精准构建布局及还原交互、动画等
+    detail:
+    - 'assets/img/yuga.jpg'
+      # md: _data/yuga.md
+    sub: Less、jQuery、Fis3
+  - title: 爱眼教室
+    duration: 参与开发者(部分页面)
+    summary: 微信公众号学生视力管理平台，依照设计稿精准构建布局及还原交互、动画等
+    sub: Less、Zepto、WeUI、Fis3、dropDownLoad(我的滑动加载插件)
+  - title: BB Mask 童颜面具
+    duration: 主要开发者
+    summary: 负责 PC 端官网的开发，依照设计稿精准构建布局及还原交互、动画等
+    sub: JQuery
+  - title: 自分享
+    duration: 参与开发者(部分页面)
+    summary: 基于微信公众号的一个分享分红平台，依照设计稿精准构建布局及还原交互、动画等
+    sub: Zepto、Less、WeUI、Fis3
+  # - title: ……
+   #可继续添加更多内容
+
+- type: os
+  name: 开源作品
+  content:
+  - title: dropDownLoad
+    url: https://github.com/TopuNet/dropDownLoad
+    summary: 滑动加载插件 主要实现滑动翻页的功能 提供一套完整的流程 包括加载动画、插入动画 以及各种事件钩子
+
+#others 其他简略内容(列表)
+others: #其他列表显示
+- type: others #ID可以为空
+  name: '其他'
+  content: #选择需要的格式
+  - title: "姓名："
+    text: "苏成闯"
+  - title: "性别："
+    text: "男"
+  - title: "年龄："
+    text: "22岁"
+  - title: "工作年限："
+    text: "2年"
+  - title: "期望城市："
+    text: "北京"
+  - title: "期望职位："
+    text: "Web前端中级程序员"
+  - title: "期望薪资："
+    text: "税后 10 ~ 13k"
+  - 感谢您花时间阅读我的简历，期待能有机会和您共事。
+
+edu: #其他列表显示
+- type: edu #ID可以为空
+  name: '教育'
+  content: #选择需要的格式
+  - title: "黑龙江省广播电视大学"
+    date: "2015年3月 - 2017年7月"
+    sub: "专科"
+    op: 计算机网络技术
+  - title: "黑龙江省齐齐哈尔市信息工程学校"
+    date: "2013年9月 - 2016年6月"
+    sub: "中专"
+    op: 网站建设与管理
+
+#- type:
+#  name: '其他'
+#  content: #选择需要的格式
+#  - 单行文字
+#  - 如果有可以继续添加
+
+#footer 脚注，打印版和web版不同不显示
+footer: #脚注多组
+  print: #打印版markdown或者html
+  screen:
+  - text: "苏成闯的简历"
+  #   href: '/'
+  - text: "简历模板自 NewFuture@CV"
+    href: "https://github.com/NewFuture/CV/"
+
+#页面额外js脚本，如xx统计
+scripts:
+#- src: "assets/js/resume.js"
+#  defer: defer #可以设置defer或者sync异步加载
