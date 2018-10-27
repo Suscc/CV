@@ -292,9 +292,10 @@ manifest="{{site.manifest}}{{querytime}}"
         queueLazyLoad();
 
         function queueLazyLoad() {
-            const group = Array.from( $( '#projects .detail' ) ).map( ( v, i ) => `#projects .detail:nth-child(${i+1})` ),
-                group2 = Array.from( $( '#projects2 .detail' ) ).map( ( v, i ) => `#projects2 .detail:nth-child(${i+1})` ),
+            const group = Array.from( $( '#projects .detail' ) ).map( ( v, i ) => Array.from( $( '#projects .detail' ) ).length === 1 ? '#projects .detail' : `#projects .detail:nth-child(${i+1})` ),
+                group2 = Array.from( $( '#projects2 .detail' ) ).map( ( v, i ) => Array.from( $( '#projects2 .detail' ) ).length === 1 ? '#projects2 .detail' : `#projects2 .detail:nth-child(${i+1})` ),
                 qll = new QueueLazyLoad();
+
 
             qll.init( {
                 Queue: [ ...group, ...group2 ],

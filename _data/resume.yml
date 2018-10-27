@@ -68,6 +68,9 @@ main: #简历主要内容，
     sub: 前端开发
     url: http://www.topu.net
     duration: "2016年7月 - 2018年7月"
+    tags:
+    - 小型团队
+    - 前后端分离
 
 - type: projects
   name: 项目
