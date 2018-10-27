@@ -68,15 +68,6 @@ main: #简历主要内容，
     sub: 前端开发
     url: http://www.topu.net
     duration: "2016年7月 - 2018年7月"
-    tags:
-    - FE
-    - 前端
-    - 小型团队
-    - 敏捷开发
-    # summary:
-    # detail: 同时包含 summary和detail在Chrome，Safari(包括IOS)，Android和新版Firefox等会自动折叠，不支持折叠的浏览器和展开后表现一致
-    # open: open
-    #可以设置open默认展开
 
 - type: projects
   name: 项目
@@ -86,7 +77,6 @@ main: #简历主要内容，
     tags:
     - 轮子
     - 作死
-    - 这货能用？
     summary: 利用 Angular4 重构一套后台框架，组建了较为完整的组件、样式库，并独立完成 API 文档的编写，最后用其开发上线了一个名片小程序的配套后台。<br><br>项目亮点：<br>貌似没有什么亮点.. 抱歉，说一点遗憾吧(还能凑凑字数)。当时用 ES6 新特征 Decorator 写了个组件生成器可以实现快速构建表单和列表，想着能和 Angular 内置的一些 API(如 Component)那样的同步开发体验，结果到项目将上线阶段发现没有办法用……  AOT 打包没有办法识别你自己定义的装饰器，到摇树优化阶段总是被干掉，解决成本还挺高，综合考虑最后还是放弃掉了。
     detail:
     - 'assets/img/mp-1.gif'
@@ -112,14 +102,15 @@ main: #简历主要内容，
     - 'assets/img/mp-angularjs-6.png'
     - 'assets/img/mp-angularjs-7.png'
       # md: _data/mp-angularjs.md
-  - title: 博思通讯
+  - title: 北京天悦国际瑜伽
     duration: 参与开发者(部分页面)
     url: http://www.guojiyujia.com
     summary: 依照设计稿精准构建布局及还原交互、动画等
     detail:
     - 'assets/img/yuga.jpg'
-  #     # md: _data/yuga.md
-    sub: Less、jQuery、RequireJS、Fis3
+      # md: _data/yuga.md
+    sub: Less、jQuery、Fis3
+
 
 - type: projects2
   name: '&nbsp'
@@ -134,14 +125,11 @@ main: #简历主要内容，
     - 'assets/img/tht-2.jpg'
     - 'assets/img/tht-3.jpg'
     sub: Less、Zepto、WeUI、Fis3、dropDownLoad(我的滑动加载插件)
-  - title: 北京天悦国际瑜伽
+  - title: 博思通讯
     duration: 参与开发者(部分页面)
     url: http://www.guojiyujia.com
     summary: 依照设计稿精准构建布局及还原交互、动画等
-    detail:
-    - 'assets/img/yuga.jpg'
-      # md: _data/yuga.md
-    sub: Less、jQuery、Fis3
+    sub: Less、jQuery、RequireJS、Fis3
   - title: 爱眼教室
     duration: 参与开发者(部分页面)
     summary: 微信公众号学生视力管理平台，依照设计稿精准构建布局及还原交互、动画等
