@@ -120,7 +120,6 @@ main: #简历主要内容，
   content:
   - title: 淘换堂
     duration: 参与开发者(部分页面)
-    url: http://www.guojiyujia.com
     summary: 微信公众号电商平台，依照设计稿精准构建布局及还原交互、动画等
     detail:
     - 'assets/img/tht-0.jpg'
@@ -130,7 +129,6 @@ main: #简历主要内容，
     sub: Less、Zepto、WeUI、Fis3、dropDownLoad(我的滑动加载插件)
   - title: 博思通讯
     duration: 参与开发者(部分页面)
-    url: http://www.guojiyujia.com
     summary: 依照设计稿精准构建布局及还原交互、动画等
     sub: Less、jQuery、RequireJS、Fis3
   - title: 爱眼教室
