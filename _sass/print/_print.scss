@@ -20,6 +20,10 @@
     display: block;
 }
 
+.otherVision {
+    display: none;
+}
+
 header .contact-item:nth-child(3) a:after {
     content: '(简历最末尾有二维码)';
 }
